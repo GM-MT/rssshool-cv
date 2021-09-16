@@ -14,7 +14,7 @@ I studied in IT for many years. But, alas, I was not able to work there normally
 ## Skills
 
 - HTML5
-- CSS3(SCSS)
+- CSS3(SCSS), Bootstrap 4
 - JavaScript(ES6+, DOM, AJAX), jQuery
 - ReactJS(Beginner)
 - PHP(Basic)
@@ -59,7 +59,6 @@ Sites:
 - Webref.ru
 - Learnjavascript.ru
 - MDN Web Docs
-
 
 ## English
 
