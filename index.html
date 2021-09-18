@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Renat Arifulin</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<header class="header">
+			<h1>Renat Arifulin</h1>
+			<h2>Junior Frontend Developer</h2>
+			<div class="line-left"></div>
+			<div class="line-right"></div>
+		</header>
+		<main class="cv-content">
+			<section class="sidebar">
+				<div class="contacts">
+					<img class="photo" src="img/photo-cv.png" alt="photo">
+
+					<ul>
+						<li><i class="fa fa-at" aria-hidden="true"></i> <a>gmart0402@yandex.kz</a></li>
+						<li><i class="fa fa-telegram" aria-hidden="true"></i><a href="https://t.me/ART_0402" target="_blank">ART_0402</a></li>
+						<li><i class="fa fa-github" aria-hidden="true"></i><a href="https://github.com/GM-MT" target="_blank">GM-MT</a></li>
+						<li><img class="discord" src="img/discord.png" alt="discord-icon"><a>GM_ART#4126</a></li>
+					</ul>
+				</div>
+				<div class="education">
+					<h3>Education</h3>
+					<p class="edu-text"><span>Bachelor</span>, Private Institute "Bolashak" Karaganda University, Kazakhstan, Information system</p>
+					<p class="edu-text"><span>Unfinished Master's Degree</span>, Tomsk State University, Russia, Institute of Applied Mathematics and Computer Science</p>
+					<h4>Courses</h4>
+					<p>Youtube:</p>
+					<ul class="list-course">
+						<li>WebForMySelf</li>
+						<li>Glo Academy</li>
+						<li>FreelancerLifeStyle</li>
+						<li>Ulby TV</li>
+					</ul>
+					<p>Sites:</p>
+					<ul class="list-course">
+						<li>Webref.ru</li>
+						<li>Learnjavascript.ru</li>
+						<li>MDN Web Docs</li>
+						
+					</ul>
+				</div>
+			</section>
+			<section class="main-content">
+				<div class="about">
+					<h3>About Me</h3>
+					<p>I studied in IT for many years. But, alas, I was not able to work there normally after university. Now I’m catching up. I enjoy writing code and building websites.</p>
+				</div>
+				<div class="skills">
+					<h3>Skills</h3>
+					<div class="skills-img">
+						<img src="img/img-row/html.png" alt="html">
+						<img src="img/img-row/css.png" alt="css">
+						<img src="img/img-row/js.png" alt="js">
+						<img src="img/img-row/react.png" alt="react">
+						<img src="img/img-row/php.png" alt="php">
+					</div>
+					<ul>
+						<li>HTML5</li>
+						<li>CSS3(SCSS)</li>
+						<li>JavaScript(ES6+, DOM, AJAX), jQuery</li>
+						<li>ReactJS(Beginner)</li>
+						<li>PHP(Basic)</li>
+						<li>SQL(Basic), MySQL, phpMyAdmin</li>
+						<li>Sublime text, VS Code</li>
+						<li>Photoshop, Figma</li>
+					</ul>
+					<div class="skills-img">
+						<img src="img/img-row/sql.png" alt="sql">
+						<img src="img/img-row/Ps.png" alt="photoshop">
+						<img src="img/img-row/figma.png" alt="figma">
+						<img src="img/img-row/sublime.png" alt="sublime">
+						<img src="img/img-row/vscode.png" alt="vscode">
+					</div>
+				</div>
+				<div class="code-example">
+					<h3>Code Example</h3>
+					<p>Kata from Codewars: Array Deep Count</p>
+					<pre>
+						<code>
+<span class="code-function">function</span> <span class="code-func-name">deepCount</span> (<span class="code-argument">arr, summ</span> <span class="code-operator">=</span> 0){
+	summ <span class="code-operator">+=</span> arr.length;
+	  
+	arr.<span class="code-function">forEach</span>(<span class="code-argument">item</span> => {
+		<span class="code-operator">if</span> (<span class="code-function">Array.isArray</span>(item)) summ <span class="code-operator">=</span> <span class="code-function">deepCount</span>(item, summ);
+	})
+	  
+	<span class="code-operator">return</span> summ;
+}
+						</code>
+					</pre>
+					
+				</div>
+				<div class="english">
+					<h3>English</h3>
+					<ul>
+						<li>A2 (actual level)</li>
+						<li>B1-B2 (potential level)</li>
+					</ul>
+					<p>I studied English at school and at university. Approximate level B2. But a long lack of practice threw me back.</p>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer-left">
+				<a href="https://rs.school/js/">
+					<img class="rss-logo" src="https://rs.school/images/rs_school_js.svg" alt="rs-school">
+				</a>
+			</div>
+			<div class="footer-center">
+				<a href="https://github.com/GM-M">
+					<img class="github-logo" src="img/github.png" alt="git-logo">
+				</a>
+			</div>
+			<time>2021</time>
+		</footer>
+	</div>
+</body>
+</html>
