@@ -6,12 +6,109 @@ body {
 	background-color: #6E7B8B
 }
 
-.container {
-	/*border: 1px solid #000;*/
+.menu {
 	width: 80%;
-	/*height: 1000px;*/
+	height: 60px;
+	background-color: #000;
+	border-radius: 0 0 5px 5px;
+	font-family: 'Rubik', sans-serif;
+	font-size: 0.85em;
+	text-transform: uppercase;
+	position: fixed;
+	top: 0;
+	left: 10%;
+	z-index: 10;
+}
+
+.menu ul {
+	float: right;
+}
+
+.menu ul li {
+	display: inline-block;
+	margin-left: -4px;
+}
+
+.menu ul li a {
+	display: block;
+	padding: 23.5px 20px;
+	text-decoration: none;
+	color: #ffa500;
+	transition: .3s linear;
+}
+
+.menu ul li:hover {
+	background-color: #ffa500;
+}
+
+.menu ul li:hover a {
+	color: #000;
+}
+
+.menu ol {
+	background-color: #000;
+	position: absolute;
+	top:-270px;
+	width: 100%;
+	transition: top .3s linear;
+	z-index: -1;
+}
+.menu ol a{
+	text-decoration: none;
+	color:#fff;
+	display: block;
+	padding: 20px
+}
+
+.menu ol a:hover {
+	background-color: #ffa500;
+}
+
+.menu ol a:hover {
+	color: #000
+}
+
+.burger {
+	width: 50px;
+	height: 50px;
+	border: 1px solid #fff;
+	border-radius: 10px;
+	position: absolute;
+	right: 30px;
+	top: 5px;
+	display: none;
+	align-content: space-evenly;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.burger-line {
+	width: 80%;
+	height: 15%;
 	background-color: #fff;
-	margin: 20px auto;
+	border-radius: 30px;
+	transform-origin: 0% 50%;
+	transition: transform .5s linear;
+}
+
+.open-burger .burger-line:nth-child(1) {
+	transform:translate(15%) rotateZ(45deg) translate(.5%) ;
+
+}
+
+.open-burger .burger-line:nth-child(2) {
+	transform: scale(0);
+}
+
+.open-burger .burger-line:nth-child(3) {
+	transform:translate(15%) rotateZ(-45deg) translate(.5%);
+}
+
+
+.container {
+	width: 80%;
+	background-color: #fff;
+	margin: 80px auto 20px;
 	box-shadow: 0px 0px 5px 5px #000;
 	font-family: 'Rubik', sans-serif;
 
@@ -31,16 +128,16 @@ body {
 }
 
 .header h1 {
-	font-size: 48px;
+	font-size: 3em;
 	font-weight: 700
 }
 
 .header h2 {
-	font-size: 36px;
+	font-size: 2.25em;
 }
 
 .line-left {
-	width: 500px;
+	width: 51%;
 	height: 20px;
 	position: absolute;
 	top: 35px;
@@ -62,7 +159,7 @@ body {
 }
 
 .line-right {
-	width: 500px;
+	width: 51%;
 	height: 20px;
 	position: absolute;
 	bottom: 35px;
@@ -84,6 +181,7 @@ body {
 }
 .cv-content {
 	display: flex;
+	background-color: #fff;
 	/*height: 900px;*/
 
 }
@@ -105,7 +203,7 @@ body {
 
 .sidebar {
 	width: 40%;
-	height: 943px;
+	/*height: 943px;*/
 	/*border-right: 1px solid #000;*/
 	background-color: #276983;
 	color:#fff;
@@ -117,9 +215,13 @@ body {
 	flex-wrap: wrap;
 }
 
+.contacts ul {
+	width: 90%;
+}
+
 .contacts li {
 	margin: 5px;
-	font-size: 1.5em;
+	font-size: 1.3em;
 }
 
 .contacts a {
@@ -131,16 +233,11 @@ body {
 }
 
 .contacts i {
-	/*font-size: 1.5em;*/
+	font-size: 1em;
 }
 
 .discord {
-	width: 24px;
-	/*height: 24px;*/
-}
-
-.fa-github {
-	width: 24px;
+	width: 5%;
 }
 
 .photo {
@@ -182,12 +279,8 @@ body {
 	text-align: justify;
 	padding: 30px;
 	border-left: 1px solid #000;
+	background-color: #fff;
 }
-
-/*.about p {
-	margin: 20px 0;
-
-}*/
 
 .skills-img {
 	margin: 10px;
@@ -207,6 +300,7 @@ body {
 
 .code-example pre{
 	background-color: #ededed;
+	white-space: pre-wrap;
 
 }
 
@@ -255,3 +349,95 @@ body {
 	color:#fff;
 }
 
+
+@media screen and (max-width: 970px) {
+	.container {
+		width: 90%;
+	}
+
+	.menu {
+		width: 90%;
+		left: 5%;
+	}
+
+	.contacts li {
+		font-size: 1em;
+	}
+}
+
+
+@media screen and (max-width: 767px) {
+	
+	.cv-content {
+		flex-direction: column;
+	}
+	.sidebar, .main-content {
+		width: 100%;
+	}
+
+	.contacts li {
+		font-size: 1.25em;
+	}
+
+	.contacts ul {
+		width: 50%;
+	}
+
+}
+
+@media screen and (max-width: 580px) {
+	.menu ul{
+		display: none
+	}
+
+	.burger {
+		display: flex;
+	}
+
+	.rss-logo {
+		width: 80%;
+	}
+
+	.github-logo {
+		width: 40px;
+	}
+
+	.header h1 {
+		font-size: 2.5em;
+	}
+
+	.header h2 {
+		font-size: 1.875em;
+	}
+
+	.contacts li {
+		font-size: 1em;
+	}
+
+	.footer {
+		height: 70px;
+	}
+}
+
+@media screen and (max-width: 472px) {
+	.header h1 {
+		font-size: 2.25em;
+	}
+
+	.header h2 {
+		font-size: 1.5em;
+	}
+	.contacts ul {
+		width: 70%;
+	}
+}
+
+@media screen and (max-width: 355px) {
+	.header h1 {
+		font-size: 2em;
+	}
+
+	.header h2 {
+		font-size: 1.25em;
+	}
+}

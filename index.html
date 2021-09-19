@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Renat Arifulin</title>
+	<link rel="shortcut icon" href="img/icon.png" type="image/png">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap" rel="stylesheet">
@@ -11,7 +12,28 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body id="home">
+	<nav class="menu">
+		<ul>
+			<li><a href="#home">home</a></li>
+			<li><a href="#education">education</a></li>
+			<li><a href="#about">about</a></li>
+			<li><a href="#skills">skills</a></li>
+			<li><a href="#code">code example</a></li>
+		</ul>
+		<div class="burger">
+			<div class="burger-line"></div>
+			<div class="burger-line"></div>
+			<div class="burger-line"></div>
+		</div>
+		<ol>
+			<li><a href="#home">home</a></li>
+			<li><a href="#education">education</a></li>
+			<li><a href="#about">about</a></li>
+			<li><a href="#skills">skills</a></li>
+			<li><a href="#code">code example</a></li>
+		</ol>
+	</nav>
 	<div class="container">
 		<header class="header">
 			<h1>Renat Arifulin</h1>
@@ -31,7 +53,7 @@
 						<li><img class="discord" src="img/discord.png" alt="discord-icon"><a>GM_ART#4126</a></li>
 					</ul>
 				</div>
-				<div class="education">
+				<div class="education" id="education">
 					<h3>Education</h3>
 					<p class="edu-text"><span>Bachelor</span>, Private Institute "Bolashak" Karaganda University, Kazakhstan, Information system</p>
 					<p class="edu-text"><span>Unfinished Master's Degree</span>, Tomsk State University, Russia, Institute of Applied Mathematics and Computer Science</p>
@@ -53,11 +75,11 @@
 				</div>
 			</section>
 			<section class="main-content">
-				<div class="about">
+				<article class="about" id="about">
 					<h3>About Me</h3>
 					<p>I studied in IT for many years. But, alas, I was not able to work there normally after university. Now I’m catching up. I enjoy writing code and building websites.</p>
-				</div>
-				<div class="skills">
+				</article>
+				<article class="skills" id="skills">
 					<h3>Skills</h3>
 					<div class="skills-img">
 						<img src="img/img-row/html.png" alt="html">
@@ -83,8 +105,8 @@
 						<img src="img/img-row/sublime.png" alt="sublime">
 						<img src="img/img-row/vscode.png" alt="vscode">
 					</div>
-				</div>
-				<div class="code-example">
+				</article>
+				<article class="code-example" id="code">
 					<h3>Code Example</h3>
 					<p>Kata from Codewars: Array Deep Count</p>
 					<pre>
@@ -93,7 +115,7 @@
 	summ <span class="code-operator">+=</span> arr.length;
 	  
 	arr.<span class="code-function">forEach</span>(<span class="code-argument">item</span> => {
-		<span class="code-operator">if</span> (<span class="code-function">Array.isArray</span>(item)) summ <span class="code-operator">=</span> <span class="code-function">deepCount</span>(item, summ);
+		<span class="code-operator">if</span> (<span class="code-function">Array.isArray</span> (item)) summ <span class="code-operator">=</span> <span class="code-function">deepCount</span> (item, summ);
 	})
 	  
 	<span class="code-operator">return</span> summ;
@@ -101,21 +123,21 @@
 						</code>
 					</pre>
 					
-				</div>
-				<div class="english">
+				</article>
+				<article class="english">
 					<h3>English</h3>
 					<ul>
 						<li>A2 (actual level)</li>
 						<li>B1-B2 (potential level)</li>
 					</ul>
 					<p>I studied English at school and at university. Approximate level B2. But a long lack of practice threw me back.</p>
-				</div>
+				</article>
 			</section>
 		</main>
 		<footer class="footer">
 			<div class="footer-left">
 				<a href="https://rs.school/js/">
-					<img class="rss-logo" src="https://rs.school/images/rs_school_js.svg" alt="rs-school">
+					<img class="rss-logo" src="https://rs.school/images/rs_school_js.svg" alt="rs-school-logo">
 				</a>
 			</div>
 			<div class="footer-center">
@@ -126,5 +148,6 @@
 			<time>2021</time>
 		</footer>
 	</div>
+	<script src="js/main.js"></script>
 </body>
 </html>
