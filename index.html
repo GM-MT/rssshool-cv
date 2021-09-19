@@ -12,7 +12,28 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body id="home">
+	<nav class="menu">
+		<ul>
+			<li><a href="#home">home</a></li>
+			<li><a href="#education">education</a></li>
+			<li><a href="#about">about</a></li>
+			<li><a href="#skills">skills</a></li>
+			<li><a href="#code">code example</a></li>
+		</ul>
+		<div class="burger">
+			<div class="burger-line"></div>
+			<div class="burger-line"></div>
+			<div class="burger-line"></div>
+		</div>
+		<ol>
+			<li><a href="#home">home</a></li>
+			<li><a href="#education">education</a></li>
+			<li><a href="#about">about</a></li>
+			<li><a href="#skills">skills</a></li>
+			<li><a href="#code">code example</a></li>
+		</ol>
+	</nav>
 	<div class="container">
 		<header class="header">
 			<h1>Renat Arifulin</h1>
@@ -32,7 +53,7 @@
 						<li><img class="discord" src="img/discord.png" alt="discord-icon"><a>GM_ART#4126</a></li>
 					</ul>
 				</div>
-				<div class="education">
+				<div class="education" id="education">
 					<h3>Education</h3>
 					<p class="edu-text"><span>Bachelor</span>, Private Institute "Bolashak" Karaganda University, Kazakhstan, Information system</p>
 					<p class="edu-text"><span>Unfinished Master's Degree</span>, Tomsk State University, Russia, Institute of Applied Mathematics and Computer Science</p>
@@ -54,11 +75,11 @@
 				</div>
 			</section>
 			<section class="main-content">
-				<article class="about">
+				<article class="about" id="about">
 					<h3>About Me</h3>
 					<p>I studied in IT for many years. But, alas, I was not able to work there normally after university. Now I’m catching up. I enjoy writing code and building websites.</p>
 				</article>
-				<article class="skills">
+				<article class="skills" id="skills">
 					<h3>Skills</h3>
 					<div class="skills-img">
 						<img src="img/img-row/html.png" alt="html">
@@ -85,7 +106,7 @@
 						<img src="img/img-row/vscode.png" alt="vscode">
 					</div>
 				</article>
-				<article class="code-example">
+				<article class="code-example" id="code">
 					<h3>Code Example</h3>
 					<p>Kata from Codewars: Array Deep Count</p>
 					<pre>
@@ -127,5 +148,6 @@
 			<time>2021</time>
 		</footer>
 	</div>
+	<script src="js/main.js"></script>
 </body>
 </html>
